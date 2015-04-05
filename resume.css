@@ -1,0 +1,507 @@
+/* Original Credit
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
+
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+	
+	Remixed by: Arannya Mukherjee
+	Added : Google Fonts
+
+*/
+
+
+.msg {
+    padding:10px;
+    background:#222;
+    position:relative;
+}
+
+.msg h1 {
+    color:#fff;
+}
+
+.msg a {
+    margin-left:20px;
+    background:#408814;
+    color:#fff;
+    padding:4px 8px;
+    text-decoration:none;
+}
+
+.msg a:hover {
+    background:#266400;
+}
+
+/* //-- yui-grids style overrides -- */
+body {
+    font-family:Georgia;
+    color:#444;
+}
+
+#inner {
+    padding:10px 80px;
+    margin:80px auto;
+    background:#f5f5f5;
+    border:solid #666;
+    border-width:8px 0 2px 0;
+}
+
+.yui-gf {
+    margin-bottom:2em;
+    padding-bottom:2em;
+    border-bottom:1px solid #ccc
+}
+
+/* //-- header, body, footer -- */
+#hd {
+    margin:2.5em 0 3em 0;
+    padding-bottom:1.5em;
+    border-bottom:1px solid #ccc;
+}
+
+#hd h2 {
+	font-family: 'Noto Sans', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+#bd,#ft {
+    margin-bottom:2em;
+}
+
+/* //-- footer -- */
+#ft {
+    padding:1em 0 5em 0;
+    font-size:92%;
+    border-top:1px solid #ccc;
+    text-align:center;
+}
+
+#ft p {
+    margin-bottom:0;
+    text-align:center;
+    font-family: 'Signika', sans-serif;
+}
+
+/* //-- core typography and style -- */
+#hd h1 {
+    font-size:48px;
+    font-family: 'Merriweather', serif;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+h2 {
+    font-size:152%;
+}
+
+h3,h4 {
+    font-size:122%;
+}
+
+h1,h2,h3,h4 {
+    color:#333;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+    font-size:100%;
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height:18px;
+    padding-right:3em;
+}
+
+a {
+    color:#990003;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+strong {
+    font-weight:bold;
+}
+
+li {
+    font-family: 'Archivo Narrow', sans-serif;
+    line-height:24px;
+    border-bottom:1px solid #ccc;
+}
+
+p.enlarge {
+    font-size:144%;
+    font-family: 'Noto Sans', sans-serif;
+    padding-right:6.5em;
+    line-height:24px;
+}
+
+p.enlarge span {
+    color:#000;
+}
+
+.contact-info {
+    margin-top:7px;
+    text-align:center;
+    font-family: 'Signika', sans-serif;
+}
+
+.first h2 {
+    font-style:italic;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.last {
+    border-bottom:0;
+}
+
+/* //-- section styles -- */
+a #pdf {
+    display:block;
+    float:left;
+    background:#666;
+    color:#fff;
+    padding:6px 50px 6px 12px;
+    margin-bottom:6px;
+    text-decoration:none;
+}
+
+a #pdf:hover {
+    background:#222;
+}
+
+.job {
+    position:relative;
+    margin-bottom:1em;
+    padding-bottom:1em;
+    border-bottom:1px solid #ccc;
+}
+
+.job h2 {
+	font-family: 'Bitter', serif;
+}
+
+.job h3 {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.job h4 {
+    font-family: 'Noto Sans', sans-serif;
+    position:absolute;
+    top:.35em;
+    right:0;
+}
+
+.job p {
+    margin:.75em 0 3em 0;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.last {
+    border:none;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.skills-list ul {
+    margin:0;
+}
+
+.skills-list li {
+    margin:3px 0;
+    padding:3px 0;
+}
+
+.skills-list li span {
+    font-size:152%;
+    display:block;
+    margin-bottom:-2px;
+    padding:0;
+}
+
+.talent {
+    width:32%;
+    float:left;
+}
+
+.talent h2 {
+    margin-bottom:6px;
+    font-family: 'Bitter', serif;
+}
+
+#srt-ttab {
+    margin-bottom:100px;
+    text-align:center;
+}
+
+#srt-ttab img.last {
+    margin-top:20px;
+}
+
+/* google font extra css */
+
+.yui-u h2 {
+	font-family: 'Bitter', serif;
+}
+
+.yui-u h3 a {
+	font-family:'Signika',sans-serif;"
+}
+ 
+strong, input, textarea {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u {
+    width:80.2%;
+}
+
+.yui-gf div.first {
+    width:12.3%;
+}
+
+/* css ? what's this ?' */
+img {
+    border:0;
+}
+
+/* form css popup stuff */
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup h2 {
+	color:#07839f; line-height:1.8em
+}
+
+.popup {
+    background-color: #fff;
+    border: 3px solid #666;
+    display: inline-block;
+    left: 50%; color:#666;
+    opacity: 0;
+    padding: 15px;
+    position: fixed;
+    text-align: justify;
+    top: 40%;
+    visibility: hidden;
+    z-index: 10;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.overlay:target+.popup {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.close {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: -15px;
+    width: 30px;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-size: 24px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+.close:hover {
+    background-color: rgba(64, 128, 128, 0.8);
+}
+.popup p, .popup div {
+    margin-bottom: 10px;
+}
+.popup input[type="text"], .popup input[type="password"] {
+    margin: 0;
+    padding: 4px; background:#d8f6fd;
+
+    border: 1px solid #66c8de;
+	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #fff;
+	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #fff;
+	box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.popup input[type="text"]:hover, .popup input[type="password"]:hover {
+    background: #fff
+}
+input[type=button]{
+	cursor: pointer;
+	font: bold 15px Arial, Helvetica;
+	color: #fafafa;
+	text-transform: uppercase;
+	background-color: #0483a0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#31b2c3), to(#0483a0));
+	background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: -o-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: linear-gradient(top, #31b2c3, #0483a0);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding:5px;
+	text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #fff;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #fff;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #fff;
+}
+
+/* contact form stuff */
+#page-wrapper {
+  /*width: 640px;*/
+  background: #FFFFFF;
+  padding: 1em;
+  margin: 1em auto;
+  border-top: 5px solid #666;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+#page-wrapper h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Bitter', serif;
+}
+
+.field {
+  margin: 1em 0;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.aboutme-name {
+  ;
+}
