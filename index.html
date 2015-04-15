@@ -140,6 +140,16 @@
   <!-- SlidesJS Required: -->
 </head>
 <body>
+  <div id="header">
+  <div class="name">Satyajit De Sir :
+    <div class="adjective">
+      <div>awesome.</div>
+      <div>invincible.</div>
+      <div>unbeatable.</div>
+      <div>indestructible.</div>
+    </div>
+  </h1>
+</div>
   <!-- SlidesJS Required: Start Slides -->
   <!-- The container is used to define the width of the slideshow -->
   <div class="container">
@@ -170,6 +180,44 @@
         }
       });
     });
+    //adjective rotation
+    (function($){
+    $.fn.extend({ 
+        rotaterator: function(options) {
+ 
+            var defaults = {
+                fadeSpeed: 500,
+                pauseSpeed: 100,
+				child:null
+            };
+             
+            var options = $.extend(defaults, options);
+         
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);                
+                  var items = $(obj.children(), obj);
+				  items.each(function() {$(this).hide();})
+				  if(!o.child){var next = $(obj).children(':first');
+				  }else{var next = o.child;
+				  }
+				  $(next).fadeIn(o.fadeSpeed, function() {
+						$(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+							var next = $(this).next();
+							if (next.length == 0){
+									next = $(obj).children(':first');
+							}
+							$(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+						})
+					});
+            });
+        }
+    });
+})(jQuery);
+
+ $(document).ready(function() {
+        $('.adjective').rotaterator({fadeSpeed:500, pauseSpeed:100});
+ });
   </script>
   <!-- End SlidesJS Required -->
 </body>
