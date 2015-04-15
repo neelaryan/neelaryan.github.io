@@ -1,36 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<title>Tribute to S.D. Sir</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="dlgbr.css" />
-	<script src="dlgbr.js"></script>
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.js"></script>-->
+  <meta charset="utf-8">
+  <title>Tribute to S.D. Sir</title>
+  <meta name="description" content="This is a small gift from the 2012-2015 batch students to S.D. Sir.">
+  <meta name="author" content="Arannya Mukherjee">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+
+  <!-- SlidesJS Optional: If you'd like to use this design -->
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+      background-color: #525252;
+    }
+
+    #slides,
+    #slides2,
+    #slides3 {
+      display: none;
+      margin-bottom:50px;
+    }
+
+    .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    a:link,
+    a:visited {
+      color: #333
+    }
+
+    a:hover,
+    a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+  </style>
+  <!-- SlidesJS Required: -->
 </head>
 <body>
-<div class="diy-slideshow">
-	<figure class="show">
-		<img src="http://themarklee.com/wp-content/uploads/2013/12/snowying.jpg" width="100%" /><figcaption>"Snowying" by <a href="http://www.flickr.com/photos/fiddleoak/8511209344/">fiddleoak</a>.</figcaption> 
-	</figure>
-  <figure>
-    <img src="http://themarklee.com/wp-content/uploads/2013/12/starlight.jpg" width="100%" /><figcaption>"Starlight" by <a href="http://www.flickr.com/photos/chaoticmind75/10738494123/in/set-72157626146319517">ChaoticMind75</a>.</figcaption> 
-	</figure>
-	<figure>
-		<img src="http://themarklee.com/wp-content/uploads/2013/12/snowstorm.jpg" width="100%" /><figcaption>"Snowstorm" by <a href="http://www.flickr.com/photos/tylerbeaulawrence/8539457508/">Beaulawrence</a>.</figcaption> 
-	</figure>
-  <figure>
-		<img src="http://themarklee.com/wp-content/uploads/2013/12/misty-winter-afternoon.jpg" width="100%" /><figcaption>"Misty winter afternoon" by <a href="http://www.flickr.com/photos/22746515@N02/5277611659/">Bert Kaufmann</a>.</figcaption> 
-	</figure>
-  <figure>
-		<img src="http://themarklee.com/wp-content/uploads/2013/12/good-morning.jpg" width="100%" /><figcaption>"Good Morning!" by <a href="http://www.flickr.com/photos/frank_wuestefeld/4306107546/">Frank Wuestefeld</a>.</figcaption> 
-	</figure>
-  <figure>
-		<img src="http://themarklee.com/wp-content/uploads/2013/12/driving-home-for-christmas.jpg" width="100%" /><figcaption>"Driving home for Christmas" by <a href="http://www.flickr.com/photos/22746515@N02/5292186041/">Bert Kaufmann</a>.</figcaption> 
-	</figure>
-  <span class="prev">&laquo;</span>
-  <span class="next">&raquo;</span>
-</div>  
+  <!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow -->
+  <div class="container">
+    <div id="slides">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/1.jpg" alt="">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/2.jpg" alt="">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/3.jpg" alt="">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/4.jpg" alt="">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/5.jpg" alt="">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/6.jpg" alt="">
+      <img src="/home/neelaryan/Documents/neelaryan.github.io/images/7.jpg" alt="">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+    </div>
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
 
-<p>An example of a pretty basic diy slideshow. This is the no-jQuery version.</p>
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false,
+        start: 1,
+        play: {
+          auto: true
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
 </body>
 </html>
